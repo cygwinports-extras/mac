@@ -1,0 +1,5 @@
+category: Audio Libs
+requires: cygwin
+external-source: mac
+sdesc: "Monkey's Audio (.ape) lossless audio codec library (development)"
+ldesc: "Monkey's Audio (.ape) lossless audio codec library"
