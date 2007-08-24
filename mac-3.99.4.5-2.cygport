@@ -1,0 +1,17 @@
+# WARNING: This should not be distributed
+# http://www.monkeysaudio.com/smf/index.php?board=2;topic=2263.7
+# http://bugs.gentoo.org/show_bug.cgi?id=94477
+
+DESCRIPTION="Monkey's Audio library"
+HOMEPAGE="" # defunct: http://sourceforge.net/projects/mac-port/
+SRC_URI="http://dl.liveforge.org/mac/${PN}-${PVP[0]}.${PVP[1]}-u${PVP[2]}-b${PVP[3]}.tar.gz"
+SRC_DIR="${PN}-${PVP[0]}.${PVP[1]}-u${PVP[2]}-b${PVP[3]}"
+
+# some headers match system headers with different caps
+USE_MANAGED_MOUNT=1
+
+PKG_NAMES="mac libmac2 libmac-devel"
+PKG_HINTS="setup runtime devel"
+PKG_CONTENTS[0]='usr/bin/*.exe usr/share'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib'

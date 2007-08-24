@@ -3,27 +3,27 @@ mac
 Monkey's Audio (.ape) lossless audio codec library
 
 Runtime requirements:
-  cygwin-1.5.21-1
+  cygwin-1.5.24-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.5-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  gcc-g++-3.4.4-1
-  libtool1.5-1.5.22-1
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  sed-4.1.5-1
+  sed-4.1.5-2
 
 Canonical website:
-  http://sourceforge.net/projects/mac-port/
+  http://sourceforge.net/projects/mac-port/ (DEFUNCT)
 
 Canonical download:
-  http://prdownloads.sourceforge.net/mac-port/
+  http://dl.liveforge.org/mac/
 
 -------------------------------------------
 
@@ -40,8 +40,9 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(mac)
   /usr/bin/mac.exe
   /usr/share/doc/Cygwin/mac-3.99.4.5.README
   /usr/share/doc/mac-3.99.4.5/AUTHORS
@@ -52,12 +53,10 @@ Files included in the binary package:
   /usr/share/doc/mac-3.99.4.5/README
   /usr/share/doc/mac-3.99.4.5/TODO
 
-Files included in the runtime library package:
-
+(libmac2)
   /usr/bin/cygmac-2.dll
 
-Files included in the development package:
-
+(libmac-devel)
   /usr/include/mac/APECompress.h
   /usr/include/mac/APECompressCore.h
   /usr/include/mac/APECompressCreate.h
@@ -86,6 +85,9 @@ Files included in the development package:
 ------------------
 
 Port Notes:
+
+----- version 3.99.4.5-2 -----
+Rebuilt.
 
 ----- version 3.99.4.5-1 -----
 Initial release for Cygwin.
