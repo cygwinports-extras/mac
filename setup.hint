@@ -1,4 +1,4 @@
 category: Audio
-requires: cygwin libmac2
+requires: libmac2
 sdesc: "Monkey's Audio (.ape) lossless audio codec utility"
 ldesc: "Monkey's Audio (.ape) lossless audio codec library"
